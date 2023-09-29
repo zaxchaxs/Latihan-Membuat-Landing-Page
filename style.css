@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.mainPage {
+    background-color: rgb(47, 172, 255);
+    background-image: linear-gradient(to bottom,rgb(47, 172, 255),rgb(47, 172, 255), rgb(124, 203, 255));
+}
+
+
+/* Bagian Navbar */
+
+.mainNavbar {
+    font-family: 'Lugrasimo', cursive;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: end;
+    display: flex;
+    position: fixed;
+    padding: 2%;
+    box-shadow: 2px 0 5px 3px rgb(64, 64, 64);
+    background-color:rgb(47, 172, 255);
+}
+
+
+.mainNavbar .mainName{
+    font-size: 23px;
+    padding-left: 2.5%;
+    text-decoration: none;
+}
+.mainNavbar .mainName a{
+    color: antiquewhite;
+}
+
+
+.mainNavbar .navbarButtons{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+}
+.mainNavbar .navbarButtons a{
+    color: antiquewhite;
+    padding: 10px 25px;
+    transition: all ease .5s;
+    border-radius: 5px;
+}
+.mainNavbar .navbarButtons a:hover{
+    background-color:rgb(146, 203, 241);
+    transform: translateX(5px);
+}
+.mainNavbar .navbarButtons a:active{
+    transform: translateY(5px);
+    background-color:rgb(65, 179, 255) ;
+}
+.mainNavbar .navbarButtons .loginButton{
+    border-radius: 4px;
+    border: 3px solid antiquewhite;
+}
+
+
+
+
+/* Content */
+
+.mainContent{
+    margin: 75px 5% 0px 5%;
+    font-family: 'Maven Pro', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mainContent .introContent, .imageContent{
+    flex: 1;
+}
+
+.mainContent .introContent{
+    padding: 6% 0 10% 3%;
+    line-height: 1.2cm;
+
+}
+
+.mainContent .introContent .contents{
+    color: antiquewhite;
+    width: 100%;
+}
+
+.mainContent .introContent .listContent{
+    padding: 20px 20px 30px 20px;
+    color: antiquewhite;
+    line-height: .9cm;
+    display: inline-block;
+}
+
+.mainContent .shopButton{
+    transition: ease .3s;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(241, 164, 0);
+    width: fit-content;
+    margin: 20px;
+    box-shadow: 2px 0 5px 0px rgb(64, 64, 64)
+}
+.mainContent .shopButton a{
+    color: antiquewhite;
+    padding: 0px 20px;
+}
+.mainContent .shopButton:hover{
+    background-color: rgb(253, 184, 35);
+    cursor: pointer;
+}
+.mainContent .shopButton:active{
+    background-color:rgb(241, 164, 0);
+}
+
+.mainContent .imageContent{
+    padding: 6% 0 10% 3%;
+}
+.mainContent .imageContent img{
+    width: 70%;
+    border-radius: 20px;
+
+}
+
+
+/* About Product */
+.secondPage{
+    background-image: linear-gradient(to top, rgb(255, 76, 213), rgb(255, 76, 213), rgb(124, 203, 255));
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: antiquewhite;
+    margin: 0;
+}
+
+.secondPage .firstParagh{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2cm
+}
+
+.secondPage .firstParagh .imageProduct{
+    padding: 6% 0 10% 5%;
+}
+.secondPage .firstParagh .imageProduct img{
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black
+}
+
+.secondPage .firstParagh .aboutProduct{
+    padding: 6% 5% 10% 0%;
+    text-align: justify;
+}
+
+
+.secondPage .secondParagh{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2cm
+}
+
+.secondPage .secondParagh .aboutProduct2{
+    padding: 6% 5% 10% 5%;
+    text-align: justify;
+}
+
+.secondPage .secondParagh .imageProduct2{
+    padding: 6% 5% 10% 5%
+}
+.secondPage .secondParagh .imageProduct2 img{
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+
+@media (max-width: 900px) {
+    .mainNavbar .mainName{
+        padding: 0% 60% 0 40%;
+        transition: .50s ease;
+    }
+    .mainNavbar .navbarButtons{
+        display: flex;
+    }
+
+    .firstParagh, .secondParagh{
+        flex-direction: column;
+    }
+    .mainContent .introContent, .mainContent .imageContent{
+        flex: 100%;
+    }
+    .secondPage .firstParagh, .secondPage .secondParagh {
+        flex: 100%;
+    }
+
+}
