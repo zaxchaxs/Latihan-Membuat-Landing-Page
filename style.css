@@ -135,7 +135,7 @@ body{
 
 /* About Product */
 .secondPage{
-    background-image: linear-gradient(to top, rgb(255, 76, 213), rgb(255, 76, 213), rgb(124, 203, 255));
+    background-color: rgb(124, 203, 255);
     font-family: 'Maven Pro', sans-serif;
     font-size: 23px;
     font-weight: bold;
